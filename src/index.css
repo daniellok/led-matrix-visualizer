@@ -1,0 +1,136 @@
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 100;
+  color: white;
+  background-color: black;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Baloo Bhai';
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Baloo Bhai';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(0,0,0,0);
+  display: flex;
+  flex-grow: 1;
+  padding: 6px;
+  color: white;
+  margin: 0px 4px 4px 4px;
+}
+
+input::-webkit-slider-runnable-track {
+  height: 2px;
+  background: white;
+}
+
+input::-moz-range-track {
+  height: 2px;
+  background: white;
+}
+
+input::-ms-track {
+  height: 2px;
+  background: white;
+}
+
+.inputLabel {
+  margin-left: 8px;
+}
+
+.visualizer {
+  text-align: center;
+}
+
+#app {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.appContainer {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 36px;
+}
+
+.controls {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 12px;
+  margin: auto;
+  margin-bottom: 12px;
+  width: 664px;
+}
+
+.controlsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.clearAll {
+  margin: auto;
+}
+
+.ledRow {
+  line-height: 0px;
+  white-space: nowrap;
+}
+
+.ledActive {
+  display: inline-block;
+  background: radial-gradient(
+    circle 5px at center,
+    rgba(255, 170, 170, 1),
+    rgba(255,0,0,0.8)
+  );
+  box-shadow: 0px 0px 5px 3px rgba(255,0,0,0.5),
+	      inset 0px 0px 5px 0.5px rgba(255, 170, 170, 0.7);
+  border-radius: 50%;
+}
+
+.ledInactive {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
