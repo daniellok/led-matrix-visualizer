@@ -131,6 +131,11 @@ input::-ms-track {
 
 .ledInactive {
   display: inline-block;
-  background-color: rgba(255,255,255,0.2);
+  background: radial-gradient(
+    circle 3px at center,
+    rgba(255,255,255,0.2),
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 0px 0px 5px 0.5px rgba(255, 255, 255, 0.2);
   border-radius: 50%;
 }
